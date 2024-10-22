@@ -17,12 +17,12 @@ useEffect(()=>{
 })
 
   return (
-    <header className={`${isActive? 'bg-white py-4 shadow-md' : 'bg-none py-6'} fixed w-full z-10 transition-all`}>
+    <header className={`${isActive? 'bg-white py-4 shadow-md' : 'bg-none py-6'} fixed w-full z-10 transition-all px-4`}>
       <div className=' container mx-auto flex items-center justify-between h-full'>
         {/* Logo */}
       <Link to={'/'}>
       <div>
-        <img className='w-[40px] 'src={Logo} alt=''/>
+        <img className='w-[40px] rounded-full 'src={Logo} alt=''/>
       </div>
       </Link>
       <div onClick={()=> setIsOpen(!isOpen)} className='cursor-pointer flex relative'>

@@ -11,7 +11,7 @@ const filteredProducts = products.filter((item) => {
     );
 });
   return (
-    <div>
+    <div className='flex flex-col'>
       <Hero/>
         <section className='py-16'>
             <div className='container mx-auto '>
